@@ -1,3 +1,4 @@
+"""
 student = {'name':'Jhon', 'age':25, 'courses':['Math','ComSci']}
 student['phone'] = '555-5555'
 print(student['name'])
@@ -8,6 +9,8 @@ student.update({'name': 'jan', 'age':24, })
 age = student.pop('age')
 print(student)
 print(age)
+
+"""
 
 menu = {
   "Baja Taco": 4.25,
@@ -20,3 +23,15 @@ menu = {
     "Taco": 3.00,
     "Tortilla Salad": 8.00
 }
+
+total_amount = 0
+while True:
+  try:
+    item = input("Item: ").title()
+    if item in menu:
+      total_amount += menu[item]
+      print("Total: $", end= "")
+      print("{:.0f}".format(total_amount))
+  except EOFError :
+    print()
+    break
