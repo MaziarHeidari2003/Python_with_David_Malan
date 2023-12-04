@@ -14,7 +14,7 @@ if (percentage) <= 1 :
   print("E")  
 elif (percentage) >= 99 :
   print("F")  
-else :
+else:
   print(f"{percentage}%")
 
     
