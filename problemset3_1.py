@@ -31,7 +31,7 @@ while True:
     if item in menu:
       total_amount += menu[item]
       print("Total: $", end= "")
-      print("{:.0f}".format(total_amount))
+      print("{:.2f}".format(total_amount))
   except EOFError :
     print()
     break
